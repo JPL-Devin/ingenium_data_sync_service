@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest",
+    "test": "jest --coverage --forceExit",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -30,18 +30,18 @@
     "url": "https://github.com/OpenIngenium/data_sync_service/issues"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=22.0.0"
   },
   "dependencies": {
-    "@elastic/elasticsearch": "^8.6.0",
-    "arangojs": "^8.2.1",
-    "winston": "^3.8.2"
+    "@elastic/elasticsearch": "^8.19.1",
+    "arangojs": "^9.3.0",
+    "winston": "^3.19.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.3"
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14"
   },
   "files": [
     "config/",
